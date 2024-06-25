@@ -1,0 +1,43 @@
+<script>
+    emps = [
+    {'name': "John Doe", 'age': 30, 'salary': 25000},
+    {'name': "Jane Doe", 'age': 25, 'salary': 20000},
+    {'name': "Bob Smith", 'age': 35, 'salary': 30000},
+    {'name': "Alice Johnson", 'age': 28, 'salary': 30000}
+    
+    ]
+    sum = 0 
+    maxsalary = 0
+    minsalary = 0
+    for(let i = 0;i<emps.length;i++){
+        console.log(`Hello ${emps[i]['name']} your salary is ${emps[i]['salary']}`)
+    }
+    for(i = 0;i<emps.length;i++){
+        sum += emps[i]['salary']
+        if(emps[i]['salary'] > maxsalary){
+            maxsalary = emps[i]['salary']
+            }
+        }
+    for(i =0;i<emps.length;i++){
+        if(emps[i]['salary'] == maxsalary){
+            console.log(`The employee with the highest salary is ${emps[i]['name']} with a salary of ${emps[i]['salary']} `)
+        }
+    }
+    for(i =0;i<emps.length;i++){    
+        if(emps[i]['salary'] < minsalary || minsalary == 0){
+            minsalary = emps[i]['salary']
+            }
+        }
+        for(i =0;i<emps.length;i++){
+            if(emps[i]['salary'] == minsalary){
+                console.log(`The employee with the lowest salary is ${emps[i]['name']} with a
+                salary of ${emps[i]['salary']}`)
+                }
+                }
+    console.log(`The total salary is ${sum}`)
+    avgsalary = sum/(emps.length)
+    console.log(`The average salary is ${avgsalary}`)
+    console.log(`The highest salary is ${maxsalary}`)
+    console.log(`The lowest salary is ${minsalary}`)
+
+</script>

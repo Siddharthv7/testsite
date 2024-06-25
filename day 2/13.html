@@ -1,0 +1,29 @@
+<body id="body">
+    <!-- <button id="red"onclick="changecolortored()">click me to red</button>
+    <button id="blue"onclick="changecolortoblue()">click me to blue</button>
+    <button id="green"onclick="changecolortogreen()">click me to green</button> -->
+
+
+</body>
+
+<script>
+    
+    function changecolortored(){
+        document.getElementById("body").style.background="red";
+        }
+        function changecolortoblue(){
+            document.getElementById("body").style.background="blue";
+            }
+            function changecolortogreen(){
+                document.getElementById("body").style.background="green";
+            }
+            i = 0
+            var colors = ["red", "blue", "green"];
+            function changeColor(){
+                document.getElementById("body").style.background = colors[i];
+                i = (i + 1) % colors.length;
+                }
+                setInterval(changeColor, 1000);
+                
+
+</script>
