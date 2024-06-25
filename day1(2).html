@@ -1,0 +1,25 @@
+<script>
+    a = Number(prompt("enter marks subject1"  ))
+    b = Number(prompt("enter marks subject2"  ))
+    c = Number(prompt("enter marks subject3"  ))
+    d = Number(prompt("enter marks subject4"  ))
+    e = Number(prompt("enter marks subject5"  ))
+    total = a + b + c + d + e
+    percentage = (total* 100)/ 500
+    console.log(`total = ${total}, percentage = ${percentage}` )
+    if(percentage>40 && percentage<=100){
+        console.log("pass")
+        } else{
+            console.log("fail")
+        }
+
+    if(percentage >= 90){
+        console.log("Grade A")
+        } else if(percentage >=70){
+            console.log("Grade B")
+        } else if(percentage >=50){
+             console.log("Grade C")
+        }   else {
+            console.log("invalid")
+        }
+</script>
