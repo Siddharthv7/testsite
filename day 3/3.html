@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <input type="text" id="num" value="5">\
+        <button onclick="gettable()">Click to get table</button>
+        <div id="table"></div>
+        \
+        <script>
+            function gettable(){
+                var num = document.getElementById("num").value;
+                var table = "";
+                for(i=1; i<=10; i++){
+                    table += num + " x " + i + " = " + (num*i) +
+                    "<br>";
+                    }
+                    document.getElementById("table").innerHTML = table;
+                    }
+
+        </script>
+
+
+    </body>
+</html>
